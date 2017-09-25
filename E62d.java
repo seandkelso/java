@@ -18,16 +18,17 @@ public class E62d
       int a = input.nextInt(); //gets input a
    System.out.print("What is your input for b? "); //asks user for input b
       int b = input.nextInt(); //gets input b
-      
-   int sum = 0;
-   for (int i = a; i<= b; i++) //for loop from a through b, inclusive, adding by 1 each time   
-     {if (i%2 != 0) //modulus function to determine if number is odd -- ie. 3mod2 != 0, since 3/2 = 1, remainder 5.
+   
+      int smallNum = Math.min(a, b); //finds small number from inputs
+      int bigNum = Math.max(a, b); //finds big number from inputs   
+      int sum = 0;
+   for (int i = smallNum; i<= bigNum; i++) //for loop from smallNum through bigNum, inclusive, adding by 1 each time   
+     {
+       if (i%2 != 0) //modulus function to determine if number is odd -- ie. 3mod2 != 0, since 3/2 = 1, remainder 5.
        {
           sum = sum + i;      
-       } //closes if statement               
-           
+       } //closes if statement                   
      } //closes for loop
    System.out.println("The sum is " +sum);
-   } //closes main
-       
-} //closes E62d                                      
+   } //closes main       
+} //closes E62d    
