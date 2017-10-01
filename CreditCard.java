@@ -103,7 +103,7 @@ String input;
         }  
    } //ends check6()
     
-      public void check()
+      public void check() //checks from 6-1 so that the first error is displayed (ie. errors with checks 4&2, displays check 2)
      {
        check6();
        check5();
@@ -123,4 +123,4 @@ String input;
        return errorCode;
     } //ends getErrorCode
     
-} //closes class CreditCard       
+} //closes class CreditCard  
